@@ -22,7 +22,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Configurate your project with this template.
+
+1. `.rubocop.yml`
+
+```yml
+inherit_gem:
+  appbooster_rubocop_config: .rubocop.yml
+AllCops:
+  TargetRubyVersion: ENTER_YOUR_RUBY_VERSION_HERE
+```
+
+1. `./spec/.rubocop.yml`
+
+```yml
+inherit_gem:
+  appbooster_rubocop_config: spec/.rubocop.yml
+
+inherit_from:
+  - ../.rubocop.yml
+```
 
 ## Development
 
