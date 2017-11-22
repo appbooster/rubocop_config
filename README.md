@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'appbooster_rubocop_config'
+gem 'appbooster_rubocop_config', github: 'appbooster/rubocop_config'
 ```
 
 And then execute:
