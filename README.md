@@ -28,7 +28,8 @@ Configurate your project with this template.
 
 ```yml
 inherit_gem:
-  appbooster_rubocop_config: .rubocop.yml
+  appbooster_rubocop_config: default.yml
+
 AllCops:
   TargetRubyVersion: ENTER_YOUR_RUBY_VERSION_HERE
 ```
@@ -37,8 +38,7 @@ AllCops:
 
 ```yml
 inherit_gem:
-  appbooster_rubocop_config: spec/.rubocop.yml
-
+  appbooster_rubocop_config: spec.yml
 inherit_from:
   - ../.rubocop.yml
 ```
