@@ -29,6 +29,11 @@ Metrics/AbcSize:
 Metrics/ParameterLists:
   CountKeywordArgs: false
 
+Naming/FileName:
+  Exclude:
+    - "Capfile"
+    - "Vagrantfile"
+
 Rails:
   Enabled: true
 
