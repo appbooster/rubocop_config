@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "appbooster_rubocop_config/version"
+require "rubocop/appbooster_rubocop_config/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "appbooster_rubocop_config"
