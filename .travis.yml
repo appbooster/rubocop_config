@@ -6,3 +6,7 @@ before_install: gem install bundler -v 1.15.4
 script:
   - make lint
   - make test
+deploy:
+  provider: rubygems
+  api_key: $RUBYGEMS_APIKEY
+  gem: appbooster_rubocop_config
