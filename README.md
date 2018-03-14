@@ -49,7 +49,8 @@ After checking out the repo, run `make setup` to install dependencies.
 Then, run `make` to run the tests and lints. Or you can call it seperatly `make lint` for linting and `make test` for testing.
 
 To install this gem onto your local machine, run `make install`.
-To release a new version, update the version number in `version.rb`, and then run `make release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To release a new version, run `make version` to show you current version, ie `0.1.4`
+Then run `make release VERSION="0.1.5"` where `VERSION` is next release version you want to push to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
