@@ -12,6 +12,9 @@ install:
 	bundle exec rake install
 
 release:
-	bundle exec rake release
+	bundle exec rake bump:set
+
+version:
+	bundle exec rake bump:current
 
 .PHONY: all
