@@ -3,6 +3,7 @@ require:
 
 AllCops:
   Include:
+    - "**/*.rb"
     - "Rakefile"
     - "config.ru"
     - "lib/**/*.rake"
@@ -67,6 +68,12 @@ Style/ClassAndModuleChildren:
 
 Style/NumericPredicate:
   Enabled: false
+
+Style/SymbolArray:
+  MinSize: 4
+
+Style/WordArray:
+  MinSize: 4
 
 Lint/UnlessMultipleConditions:
   Description: 'Do not use `unless` with multiple conditions.'
