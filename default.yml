@@ -38,9 +38,6 @@ Naming/FileName:
     - "Capfile"
     - "Vagrantfile"
 
-Rails:
-  Enabled: true
-
 VariableName:
   EnforcedStyle: snake_case
 
