@@ -29,7 +29,7 @@ module RuboCop
       #     something
       #   end
       class UnlessMultipleConditions < Cop
-        MSG = "Avoid using `unless` with multiple conditions.".freeze
+        MSG = "Avoid using `unless` with multiple conditions."
 
         def on_if(node)
           return unless node.unless?
