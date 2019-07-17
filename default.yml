@@ -41,9 +41,6 @@ Naming/FileName:
 Rails:
   Enabled: true
 
-Rails/SkipsModelValidations:
-  Enabled: true
-
 VariableName:
   EnforcedStyle: snake_case
 
