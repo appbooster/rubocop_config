@@ -38,7 +38,7 @@ Naming/FileName:
     - "Capfile"
     - "Vagrantfile"
 
-VariableName:
+Naming/VariableName:
   EnforcedStyle: snake_case
 
 # Single quotes being faster is hardly measurable and only affects parse time.

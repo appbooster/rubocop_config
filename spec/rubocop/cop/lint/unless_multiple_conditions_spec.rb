@@ -6,7 +6,7 @@ RSpec.describe RuboCop::Cop::Lint::UnlessMultipleConditions do
   let(:config) { RuboCop::Config.new }
 
   it "registers an offense when using `unless` with multiple `and` conditions" do
-    expect_offense(<<-RUBY.strip_indent)
+    expect_offense(<<~RUBY)
       unless foo && bar
              ^^^^^^^^^^ Avoid using `unless` with multiple conditions.
         something
@@ -15,7 +15,7 @@ RSpec.describe RuboCop::Cop::Lint::UnlessMultipleConditions do
   end
 
   it "registers an offense when using `unless` with multiple `or` conditions" do
-    expect_offense(<<-RUBY.strip_indent)
+    expect_offense(<<~RUBY)
       unless foo || bar
              ^^^^^^^^^^ Avoid using `unless` with multiple conditions.
         something
@@ -24,7 +24,7 @@ RSpec.describe RuboCop::Cop::Lint::UnlessMultipleConditions do
   end
 
   it "does not register an offense when using `if` with multiple `and` conditions" do
-    expect_no_offenses(<<-RUBY.strip_indent)
+    expect_no_offenses(<<~RUBY)
       if !foo && !bar
         something
       end
@@ -32,7 +32,7 @@ RSpec.describe RuboCop::Cop::Lint::UnlessMultipleConditions do
   end
 
   it "does not register an offense when using `if` with multiple `or` conditions" do
-    expect_no_offenses(<<-RUBY.strip_indent)
+    expect_no_offenses(<<~RUBY)
       if !foo || !bar
         something
       end
@@ -40,7 +40,7 @@ RSpec.describe RuboCop::Cop::Lint::UnlessMultipleConditions do
   end
 
   it "does not register an offense when using `unless` with single condition" do
-    expect_no_offenses(<<-RUBY.strip_indent)
+    expect_no_offenses(<<~RUBY)
       unless foo
         something
       end

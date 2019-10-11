@@ -33,6 +33,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "bump", ">= 0.5.4"
 
-  spec.add_dependency "rubocop", "~> 0.72"
-  spec.add_dependency "rubocop-rspec", "~> 1.33"
+  spec.add_dependency "rubocop", "~> 0.75"
+  spec.add_dependency "rubocop-rspec", "~> 1.36"
 end
