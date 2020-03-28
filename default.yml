@@ -20,7 +20,7 @@ AllCops:
 Layout/SpaceInLambdaLiteral:
   EnforcedStyle: require_space
 
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
 # Commonly used screens these days easily fit more than 80 characters.
