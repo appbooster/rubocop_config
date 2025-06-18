@@ -8,7 +8,7 @@ RSpec.describe RuboCop::Cop::Lint::UnlessMultipleConditions do
   it "registers an offense when using `unless` with multiple `and` conditions" do
     expect_offense(<<~RUBY)
       unless foo && bar
-             ^^^^^^^^^^ Avoid using `unless` with multiple conditions.
+             ^^^^^^^^^^ Lint/UnlessMultipleConditions: Avoid using `unless` with multiple conditions.
         something
       end
     RUBY
@@ -17,7 +17,7 @@ RSpec.describe RuboCop::Cop::Lint::UnlessMultipleConditions do
   it "registers an offense when using `unless` with multiple `or` conditions" do
     expect_offense(<<~RUBY)
       unless foo || bar
-             ^^^^^^^^^^ Avoid using `unless` with multiple conditions.
+             ^^^^^^^^^^ Lint/UnlessMultipleConditions: Avoid using `unless` with multiple conditions.
         something
       end
     RUBY

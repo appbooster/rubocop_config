@@ -28,7 +28,7 @@ module RuboCop
       #   if !foo && !bar
       #     something
       #   end
-      class UnlessMultipleConditions < Cop
+      class UnlessMultipleConditions < Base
         MSG = "Avoid using `unless` with multiple conditions."
 
         def on_if(node)
